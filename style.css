@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+#root {
+    width: 1200px;
+    height: 2000px;
+    margin: 0 auto;
+    background-color: rgb(250, 246, 246);
+
+}
+
+header {
+    background-color: rgb(228, 223, 223);
+    width: 100%;
+    padding: 2px 5px;
+
+
+}
+
+header .header-links {
+    text-align: right;
+}
+
+header .header-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    transition: 0.2s;
+    font-family: sans-serif;
+
+}
+
+header .header-links a:hover {
+    color: rgb(438, 135, 13);
+    text-decoration: underline;
+
+}
+
+header .header-links .active {
+    color: rgb(438, 135, 13);
+}
+
+nav {
+    width: 1200px;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+
+
+}
+
+nav .logo {
+    width: 200px;
+    height: 100%;
+
+    float: left;
+}
+
+nav .logo img {
+    width: 150px;
+    height: 75px;
+
+}
+
+nav .searchbar {
+    width: 800px;
+    height: 100%;
+
+    float: left;
+}
+
+nav .searchbar .search-wrapper {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+
+
+}
+
+nav .searchbar .search-wrapper input {
+    background-color: aliceblue;
+    width: 600px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+nav .searchbar .search-wrapper button {
+    width: 50px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(438, 135, 13);
+    float: left;
+}
+
+nav .searchbar .search-wrapper button img {
+    width: 24px;
+    height: 24px;
+}
+nav .searchbar .search-wrapper button img:hover{
+transform: scale(1.05);
+cursor: pointer;
+}
+
+nav .cart {
+    width: 200px;
+    height: 100%;
+
+    float: left;
+}
+
+nav .cart img {
+    width: 36px;
+    height: 36px;
+    margin-top: 24px;
+    margin-right: 100%;
+}
+nav .cart img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.intro {
+    width: 1200px;
+    height: 350px;
+    /* margin-bottom: 10px; */
+    float: left;
+
+}
+
+.categories {
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    float: left;
+    position: relative;
+}
+
+.categories-link {
+    width: 100%px;
+    height: 23px;
+
+}
+
+.subcat {
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    box-shadow: 0 0 8px lightgray;
+}
+
+.subcat.subcat-link {
+    width: 100%;
+    height: 23px;
+}
+
+
+.categories .categories-link:hover .subcat {
+    display: block;
+}
+
+.categories .categories-link,
+.subcat .subcat-link {
+    padding: 2px;
+    margin-top: 6px;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-left: 5px;
+
+}
+
+.categories .categories-link a,
+.subcat .subcat-link a {
+    text-decoration: none;
+    color: rgb(131, 125, 125);
+
+}
+
+/* .categories .categories-link a:hover,  .subcat .subcat-link a:hover{
+    color:teal;
+    
+}  */
+
+.categories .categories-link:hover,
+.subcat .subcat-link:hover {
+    background-color: rgb(230, 238, 244);
+
+
+}
+
+.categories .categories-link:hover .cat,
+.subcat .subcat-link:hover .sub {
+    color: teal;
+
+}
+
+
+
+
+.ad {
+    width: 1000px;
+    height: 350px;
+    background-color: rgb(223, 209, 14);
+    float: left;
+}
+
+.ad img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner {
+    width: 900px;
+    height: 150px;
+    background-color: rgb(253, 118, 0);
+    border-radius: 40px;
+    margin: 40px 150px;
+    padding: 30px 50px;
+    float: left;
+
+}
+
+.banner h1 {
+    color: rgb(253, 253, 190);
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-bottom: 10px;
+
+}
+
+.banner p {
+    color: rgb(253, 253, 190);
+    font-family: sans-serif;
+    font-size: 18px;
+
+
+
+}
+
+.banner button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: rgb(10, 69, 66);
+    background-color: rgb(8, 246, 135);
+    padding: 10px 30px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+}
+.banner button:hover{
+    color: rgb(18, 107, 102);
+    background-color: rgba(8, 246, 135, 0.988);
+    transition-delay: smooth;
+    box-shadow: 0px 2px 5px rgb(177, 175, 175);
+} 
+
+.main-categories {
+    width: 1200px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.category {
+    width: 230px;
+    background-color: white;
+    height: 100%;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 30px;
+}
+
+.category:hover {
+    color: green;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgb(177, 175, 175);
+
+}
+
+.category .category-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+
+}
+
+.category .category-img img {
+    width: 43px;
+    height: 43px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.category .catrgory-text {
+    width: 170px;
+    height: 100%;
+    float: left;
+    padding: 14px 6px;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 600px;
+
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 23px;
+    color: rgb(148, 145, 145);
+    font-weight: 400;
+    padding-left: 5px;
+
+}
+
+.flash-sale {
+    width: 1200px;
+    height: 300px;
+    margin-top: 10px
+}
+
+.flash-sale .sale {
+    width: 100%;
+    height: 65px;
+    /* background-color:  rgb(148, 145, 145); */
+    /* box-shadow: 0 1px black; */
+
+}
+
+.flash-sale .sale .on-sale-now {
+    color:  #f85606;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500px;
+    position: relative;                
+    left: 6px;
+    top: 29px;
+
+}
+.flash-sale .sale .on-sale-now:hover{
+    color:  #f85706db;
+    cursor: pointer;
+    font-size: 15px;
+
+
+}
+.flash-sale .sale .ending-now {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #202020;
+    position: relative;
+    left: 150px;
+    top: 12px;
+
+}
+
+.flash-sale .sale .hours {
+    width: 40px;
+    height: 35px;
+    background-color: #f85606;
+    position: relative;
+    left: 230px;
+    bottom: 12px;
+    border-radius: 2px;
+}
+
+.flash-sale .sale .minutes {
+    width: 40px;
+    height: 35px;
+    background-color: #f85606;
+    position: relative;
+    left: 285px;
+    bottom: 46px;
+    border-radius: 2px;
+}
+
+.flash-sale .sale .sec {
+    width: 40px;
+    height: 35px;
+    background-color: #f85606;
+    position: relative;
+    left: 338px;
+    bottom: 81px;
+    border-radius: 2px;
+}
+
+.flash-sale .flash-sale-body {
+    width: 188px;
+    height: 345px;
+    font-family: sans-serif;
+    background-color: #fff;
+    margin-right: 12px;
+    margin-bottom: 14px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    
+}
+.flash-sale .flash-sale-body:hover{
+    box-shadow: 1px 2px 5px rgba(26, 26, 26, 0.15);
+}
+
+.flash-sale .flash-sale-body img {
+    width:188px;
+}
+
+.flash-sale .flash-sale-body img:hover{
+    transform: scale(1.05)
+}
+
+.flash-sale .flash-sale-body .sale-title {
+    height: 36px;
+    line-height: 18px;
+    color: #424242;
+    font-size: 14px;
+    font-size: 12px;
+    overflow: hidden;
+    font-family: sans-serif;
+    padding-left: 5px;
+}
+
+.flash-sale .flash-sale-body .price {
+    font-family: sans-serif;
+    color: #f85606;
+    margin-top: 4px;
+}
+
+.flash-sale .flash-sale-body .origin-price .original {
+    font-size: 10px;
+    color: #9e9e9e;
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+
+.flash-sale .flash-sale-body .origin-price .discount {
+    font-size: 10px;
+    background-color: #d3232a;
+    color: #eff0f5;
+    padding: 1px 2px;
+}
+
+.flash-sale .flash-sale-body .wrap {
+    padding: 5px 0;
+}
+
+.flash-sale .flash-sale-body .wrap .pg-bar {
+    width: 86px;
+    height: 9px;
+    border-radius: 9px;
+    background-color: #e0e0e0;
+
+
+}
+
+.flash-sale .flash-sale-body .wrap .pg-bar .cursor {
+    background: #d3232a;
+    width: 8px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.flash-sale .flash-sale-body .sold {
+    font-size: 10px;
+    color: #d3232a;
+
+}
+
+.flash-sale .flash-sale-body .action {
+    text-align: center;
+    width: 100%
+}
+
+.flash-sale .flash-sale-body .action button {
+    border: 1px solid #f57224;
+    background-color: #fff;
+    padding: 2px 2px;
+    font-size: 12px;
+    height: 28px;
+    color: #f57224;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.flash-sale .flash-sale-body .action button:hover{
+     font-size: 13px
+}
